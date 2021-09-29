@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Christina Kovalchuk](https://up.htmlacademy.ru/htmlcss/32/user/252001).
-* Наставник: Антон Савельев.
+* Наставник: [Антон Савельев](https://htmlacademy.ru/profile/id1101501).
 
 ---
 
