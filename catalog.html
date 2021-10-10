@@ -10,18 +10,16 @@
     <img class="logo-header" src="" alt="Логотип сайта">
   </a>
   <nav class="main-navigation">
-    <ul class="search-navigation">
-      <li><form method="post" action="https://echo.htmlacademy.ru">
-        <input class="search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-      </form></li>
-      <li><a href="#">Каталог товаров</a></li>
-    </ul>
+    <form method="post" action="https://echo.htmlacademy.ru">
+      <input class="search" type="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+    </form>
     <ul class="user-navigation">
       <li><a class="exit" href="#">Войти</a></li>
       <li><a class="compare" href="#">Сравнить</a></li>
       <li><a class="basket" href="#">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
+      <li><a href="#">Каталог товаров</a></li>
       <li><a class="delivery" href="#">Доставка</a></li>
       <li><a class="guarantee" href="#">Гарантия</a></li>
       <li><a class="contact" href="#">Контакты</a></li>
@@ -32,7 +30,7 @@
   <h1 class="page-title">Моноподы для селфи</h1>
   <ul class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
-    <li><a href="catalog.html">Каталог товаров</a></li>
+    <li>Каталог товаров</li>
     <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
   </ul>
   <section class="filters">
@@ -41,32 +39,39 @@
       <fieldset>
         <legend>Стоимость</legend>
         <input class="price" type="range" min="0" max="100” step="1” value="50">
+      </fieldset>
+      <fieldset>
         <span>Цвет</span>
         <ul class="colors-choice">
           <li class="filter-color">
-            <img class="color" src="" alt="черный">
-            <label for="color-black">Черный</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="color-black" checked>
+            <label for="color-black">Черный
+             <span>Черный</span>
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="color-black" checked>
+            </label>
           </li>
           <li class="filter-color">
-            <img class="color" src="" alt="белый">
-            <label for="color-white">Белый</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="color-white">
+            <label for="color-white">Белый
+             <span>Белый</span>
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="color-white">
+            </label>
           </li>
           <li class="filter-color">
-            <img class="color" src="" alt="синий">
-            <label for="color-blue">Синий</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="color-blue">
+            <label for="color-blue">Синий
+             <span>Синий</span>
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="color-blue">
+            </label>
           </li>
           <li class="filter-color">
-            <img class="color" src="" alt="красный">
-            <label for="color-red">Красный</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="color-red">
+            <label for="color-red">Красный
+             <span>Красный</span>
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="color-red">
+            </label>
           </li>
           <li class="filter-color">
-            <img class="color" src="" alt="розовый">
-            <label for="color-pink">Розовый</label>
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="color-pink">
+            <label for="color-pink">Розовый
+             <span>Розовый</span>
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="color-pink">
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -91,7 +96,9 @@
   <h2 class="visually-hidden">Список селфи</h2>
    <div class="sorting">
      <h3>Сортировка:</h3>
-      <p>Сначала популярные</p>
+     <ul>
+      <li>Сначала популярные</li>
+     </ul>
      <div class="arrows">
       <a href="#"></a>
       <a href="#" class="arrow-active"></a>
