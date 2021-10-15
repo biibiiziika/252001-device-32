@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="main-header">
@@ -38,11 +39,11 @@
     <h2>Фильтр:</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>Стоимость</legend>
-        <input class="price" type="range" min="0" max="100” step="1” value="50">
+        <label>Стоимость</label>
+        <input class="price" type="range" min="0" max="100" step="1" value="50">
       </fieldset>
       <fieldset>
-        <span>Цвет</span>
+        <span class="colors">Цвет</span>
         <ul class="colors-choice">
           <li class="filter-color">
             <label for="color-black">Черный
