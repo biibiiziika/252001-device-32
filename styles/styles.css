@@ -27,7 +27,7 @@
   font-display: swap;
 }
 body {
-  font-family: Rubik,sans-serif;
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-size: 18px;
   line-height: 30px;
   background-color: #ffffff;
@@ -37,35 +37,35 @@ body {
   background-color: #FFE17F;
   color: #000000;
 }
-.main-navigation {
-  font-size: 16px;
-  line-height: 19px;
-}
-.main-navigation a {
+.main-navigation_link,
+.user-navigation_link,
+.site-navigation_link {
   text-decoration: none;
   color: #000000;
 }
-.user-navigation {
-  font-family: Raleway, sans-serif;
+.user-navigation{
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 19px;
+}
+.site-navigation {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
+  list-style-type: none;
 }
-.user-navigation a {
-  text-decoration: none;
-  color: #000000;
-}
-.description a {
-  font-family: Raleway, sans-serif;
+.description-name {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
-.description-button a,
+.description-button_link,
 .button-first,
 .button-second {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -86,47 +86,47 @@ body {
   font-size: 16px;
 }
 .popular-items {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
+  list-style-type: none;
 }
-.popular-items a {
+.popular-item_link,
+.buttons-service_link {
   text-decoration: none;
   color: #000000;
 }
 .buttons-service {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  list-style-type: none;
 }
-.buttons-service a {
-  text-decoration: none;
-  color: #000000;
-}
-.delivery-info h2,
-.container-about-us h2,
-.subscribe h2 {
-  font-family: Raleway, sans-serif;
+.delivery-title,
+.about-us-title,
+.subscribe-title,
+.page-title {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
-.container-about-us p,
-.delivery-info p,
-.subscribe p {
+.about-us_info,
+.delivery_info,
+.subscribe_info {
   color: #444444;
 }
-.special-delivery p,
+.special-delivery_info,
 .show-more {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -135,22 +135,25 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.transport-companies li {
-  font-family: Rubik, sans-serif;
+.transport-companies {
+  list-style-type: none;
+}
+.transport-company_name {
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
-.contacts h3 {
-  font-family: Rubik, sans-serif;
+.contacts_name {
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #444444;
 }
-.contacts a {
+.contacts_tel {
   text-decoration-line: underline;
   color: #444444;
 }
@@ -161,8 +164,11 @@ footer {
 .address {
   line-height: 19px;
 }
-.site-navigation-footer a {
-  font-family: Raleway, sans-serif;
+.site-navigation-footer {
+  list-style-type: none;
+}
+.site-navigation-footer_link {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -173,27 +179,27 @@ footer {
   text-decoration: none;
   color: #FFFFFF;
 }
-.phone a {
+.phone_number {
   text-decoration: none;
   color: #FFFFFF;
 }
-.page-title h1 {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
+.social-buttons,
+.breadcrumbs,
+.pagination-list {
+  list-style-type: none;
 }
-.breadcrumbs li {
+.breadcrumb {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
   opacity: 0.6;
+}
+.breadcrumb_link {
   text-decoration: none;
 }
-.filters h2,
-.sorting h3 {
-  font-family: Raleway, sans-serif;
+.filters_title,
+.sorting_title {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -201,9 +207,10 @@ footer {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-label,
-.colors {
-  font-family: Rubik, sans-serif;
+.price,
+.colors,
+.bluetooth-name {
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -211,7 +218,7 @@ label,
   letter-spacing: -0.02em;
 }
 .button-show {
-  font-family: Raleway, sans-serif;
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -220,8 +227,8 @@ label,
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.catalog-item a {
-  font-family: Rubik, sans-serif;
+.catalog-item_name {
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -230,8 +237,8 @@ label,
   text-decoration: none;
   color: #000000;
 }
-.catalog-item span {
-  font-family: Rubik, sans-serif;
+.catalog-item_price {
+  font-family: Rubik,Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -239,8 +246,8 @@ label,
   text-align: right;
   color: #444444;
 }
-.pagination-button a {
-  font-family: Raleway, sans-serif;
+.pagination-button_link {
+  font-family: Raleway,Proxima Nova,Avenir,sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -252,7 +259,7 @@ label,
   text-decoration: none;
   color: #000000;
 }
-.pagination-item li {
+.pagination-item {
   text-decoration: none;
   text-align: center;
   color: #444444;
